@@ -4,6 +4,11 @@
     <%= submit_tag 'Search'  %>
 <% end %>
 
+
+<% if @courses.nil? %>
+
+<p>No courses found with relevant information...sorry</p>
+<% else %>
 <table border="1">
   <tr>
     <th>Image</th>
@@ -21,3 +26,5 @@
   <% end %>
 
 </table>
+
+<% end %>
